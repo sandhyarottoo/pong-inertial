@@ -32,7 +32,7 @@ blue = (0,0,255)
 white = (255,255,255)
 SURFACE_COLOR = (50, 50, 60)
 PLAYER1_COLOR = (255, 50, 50)
-PLAYER2_COLOR = (50, 50, 255)
+PLAYER2_COLOR = (50, 230, 255)
 DISK_RADIUS = 300
 PLAYER_RADIUS = 305
 PLAYER_WIDTH = 8
@@ -596,7 +596,7 @@ def run_game():
         bg_rotation = pygame.transform.rotate(bg, angle)
         bg_rect = bg_rotation.get_rect(center = bg_rotation.get_rect(center = (WIDTH//2, HEIGHT//2)).center)
         screen.blit(bg_rotation, bg_rect) # background
-        angle -= W_PLATFORM*360/(2*np.pi) * dt *100
+        angle -= W_PLATFORM*360/(2*np.pi) * dt *60
         
         # places table top
         screen.blit(disk, (WIDTH/2-300,HEIGHT/2-300))
@@ -642,7 +642,7 @@ def run_game():
             text = pygame.font.SysFont('verdana', 40).render('Respawning in 2 seconds...', True, black)
             circle.respawn = False
             circle.pos = pygame.Vector2(PLAYER_RADIUS/20,np.random.sample()*2*np.pi)
-            circle.vel = pygame.Vector2(100 + np.random.sample()*50,np.random.sample()*2)
+            circle.vel = pygame.Vector2(200 + np.random.sample()*50,np.random.sample()*2)
             circles.update(charges,player1,player2)
         if pygame.time.get_ticks() - text_time < 0:
             circles.draw(screen)
