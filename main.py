@@ -13,11 +13,10 @@ import os
 
 ########## CONSTANTS ##########
 
-# Folder path (to 'phys-hackathon-2023/')
-# path = '/Users/sandhya/phys-hackathon-2023/'
+# Folder path (to 'pong-inertial/')
 path = ''
-if os.getcwd().split('/')[-1] != "phys-hackathon-2023":
-    path = path = '/Users/sandhya/phys-hackathon-2023/' #input("write the path to the 'phys-hackathon-2023' folder here:")
+if os.getcwd().split('/')[-1] != "pong-inertial":
+    path = input("write the path to the 'pong-inertial' folder here:")
 
 
 # Constants
