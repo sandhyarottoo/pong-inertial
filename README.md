@@ -13,11 +13,11 @@ These forces are fully described, rather succinctly, by just a few straightforwa
  ```
 
 ### How to Play
-This game runs solely on Python. All the user needs to do is download the Multimedia folder and run:
+This game runs solely on Python. All the user needs to do is clone this repo, navigate to it in their terminal and run:
 ```ruby
 python main.py
 ```
-in their terminal, in the same directory. The game works by using keys *a* & *b* (for player 1) and the right & left arrows (for player 2) in order to stop the ball (the coloured, moving disk) from leaving the turn table. Note that the colour of the ball indicates the player who must next hit the ball (it is colour-coded). 
+in their terminal, in the same directory. The game works by using keys *a* & *d* (for player 1) and the right & left arrows (for player 2) in order to stop the ball (the coloured, moving disk) from leaving the turn table. Note that the colour of the ball indicates the player who must next hit the ball (it is colour-coded). 
 
 ### Requirements
 To run this successfully, ensure that you have up-to-date versions of Numpy,
